@@ -27,7 +27,7 @@ class AlamofireNetworkService: NetworkServicePotocol {
                 }
             }
     }
-    
+
     func searchAlbums(by text: String, completion: @escaping (Albums) -> ()) {
         let params: [String : Any] = [
             "term": text,
@@ -46,7 +46,7 @@ class AlamofireNetworkService: NetworkServicePotocol {
                 }
             }
     }
-    
+
     func searchMovies(by text: String, completion: @escaping (Movies) -> ()) {
         let params: [String : Any] = [
             "term": text,
@@ -65,7 +65,7 @@ class AlamofireNetworkService: NetworkServicePotocol {
                 }
             }
     }
-    
+
     func getAlbums(byArtist id: Int, completion: @escaping (Albums) -> ()) {
         let params: [String : Any] = [
             "id":id.description,
@@ -82,7 +82,7 @@ class AlamofireNetworkService: NetworkServicePotocol {
                 }
             }
     }
-    
+
     func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> ()) {
         let params: [String : Any] = [
             "id":id.description,

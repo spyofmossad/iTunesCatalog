@@ -19,15 +19,15 @@
 		0A47B712252764E60082E542 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47B711252764E60082E542 /* Constants.swift */; };
 		0A47B7152527665C0082E542 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47B7142527665C0082E542 /* AlbumsViewController.swift */; };
 		0A47B718252766FA0082E542 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47B717252766FA0082E542 /* Albums.swift */; };
-		0A7E7471252CE91A00EE0994 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7E7470252CE91A00EE0994 /* Alamofire.framework */; };
 		0A7E7474252CEC1500EE0994 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E7473252CEC1500EE0994 /* NetworkServiceProtocol.swift */; };
 		0A7E7477252CEC2F00EE0994 /* AlamofireNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E7476252CEC2F00EE0994 /* AlamofireNetworkService.swift */; };
 		0A7E747C252CFB0600EE0994 /* MoyaNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E747B252CFB0600EE0994 /* MoyaNetworkService.swift */; };
-		0A7E7481252CFF5500EE0994 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7E7480252CFF5500EE0994 /* Moya.framework */; };
 		0A7E748E252DE1EC00EE0994 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E748D252DE1EC00EE0994 /* SearchController.swift */; };
 		0A8C9F172528799500719C10 /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C9F162528799500719C10 /* TracksViewController.swift */; };
 		0A8C9F1A25287C5A00719C10 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C9F1925287C5A00719C10 /* Tracks.swift */; };
 		0AC0EE082529CE29007ECD98 /* SearchAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0EE072529CE29007ECD98 /* SearchAlbumsViewController.swift */; };
+		0ADBDC712539BF6300591AC3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADBDC702539BF6300591AC3 /* Alamofire.framework */; };
+		0ADBDC732539BF6D00591AC3 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADBDC722539BF6D00591AC3 /* Moya.framework */; };
 		0AE286CF2526429A007F53EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE286CE2526429A007F53EE /* AppDelegate.swift */; };
 		0AE286D12526429A007F53EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE286D02526429A007F53EE /* SceneDelegate.swift */; };
 		0AE286D32526429A007F53EE /* SearchArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE286D22526429A007F53EE /* SearchArtistsViewController.swift */; };
@@ -53,15 +53,15 @@
 		0A47B711252764E60082E542 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Controller/Constants.swift; sourceTree = "<group>"; };
 		0A47B7142527665C0082E542 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		0A47B717252766FA0082E542 /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
-		0A7E7470252CE91A00EE0994 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		0A7E7473252CEC1500EE0994 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		0A7E7476252CEC2F00EE0994 /* AlamofireNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkService.swift; sourceTree = "<group>"; };
 		0A7E747B252CFB0600EE0994 /* MoyaNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaNetworkService.swift; sourceTree = "<group>"; };
-		0A7E7480252CFF5500EE0994 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = SOURCE_ROOT; };
 		0A7E748D252DE1EC00EE0994 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		0A8C9F162528799500719C10 /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
 		0A8C9F1925287C5A00719C10 /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
 		0AC0EE072529CE29007ECD98 /* SearchAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbumsViewController.swift; sourceTree = "<group>"; };
+		0ADBDC702539BF6300591AC3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		0ADBDC722539BF6D00591AC3 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = SOURCE_ROOT; };
 		0AE286CB2526429A007F53EE /* iTunesCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE286CE2526429A007F53EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AE286D02526429A007F53EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7E7481252CFF5500EE0994 /* Moya.framework in Frameworks */,
-				0A7E7471252CE91A00EE0994 /* Alamofire.framework in Frameworks */,
+				0ADBDC732539BF6D00591AC3 /* Moya.framework in Frameworks */,
+				0ADBDC712539BF6300591AC3 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +158,8 @@
 				0AE286D02526429A007F53EE /* SceneDelegate.swift */,
 				0AE286D72526429B007F53EE /* Assets.xcassets */,
 				0AE286DC2526429B007F53EE /* Info.plist */,
-				0A7E7470252CE91A00EE0994 /* Alamofire.framework */,
-				0A7E7480252CFF5500EE0994 /* Moya.framework */,
+				0ADBDC722539BF6D00591AC3 /* Moya.framework */,
+				0ADBDC702539BF6300591AC3 /* Alamofire.framework */,
 			);
 			path = iTunesCatalog;
 			sourceTree = "<group>";
@@ -285,15 +285,15 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			name = "Carthage dependencies";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
