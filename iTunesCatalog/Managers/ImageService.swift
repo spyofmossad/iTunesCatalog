@@ -24,7 +24,7 @@ class ImageService {
         }
     }
     
-    private func fetchImageData(from url: URL, completion: @escaping (Data, URLResponse) -> ()) {
+    private func fetchImageData(from url: URL, completion: @escaping (Data, URLResponse) -> Void) {
         URLSession.shared.dataTask(with: url, completionHandler: { (data, response, _) in
             guard let data = data, let response = response else { return }
             completion(data, response)

@@ -8,7 +8,6 @@
 import Foundation
 
 class TableCells {
-    
     static let ArtistCellName = "artistCell"
     static let AlbumCell = "albumCell"
 }

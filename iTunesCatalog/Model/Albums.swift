@@ -23,8 +23,8 @@ struct Album: Codable {
 }
 
 enum WrapperType: String, Codable {
-    case artist = "artist"
-    case collection = "collection"
+    case artist
+    case collection
 }
 
 extension Album {

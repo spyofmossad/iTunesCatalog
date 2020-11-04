@@ -54,7 +54,7 @@ class AlbumsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.Segues.ShowTracks {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let tracksViewController = segue.destination as! TrackTableViewController
+                guard let tracksViewController = segue.destination as? TrackTableViewController else { return }
                 tracksViewController.albumId = albums?[indexPath.row].collectionId
             }
             

@@ -13,11 +13,11 @@ enum UrlRequestType {
 }
 
 protocol NetworkServicePotocol {
-    func searchArtists(by text: String, completion: @escaping (Artists) -> ())
-    func searchAlbums(by text: String, completion: @escaping (Albums) -> ())
-    func searchMovies(by text: String, completion: @escaping (Movies) -> ())
-    func getAlbums(byArtist id: Int, completion: @escaping (Albums) -> ())
-    func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> ())
+    func searchArtists(by text: String, completion: @escaping (Artists) -> Void)
+    func searchAlbums(by text: String, completion: @escaping (Albums) -> Void)
+    func searchMovies(by text: String, completion: @escaping (Movies) -> Void)
+    func getAlbums(byArtist id: Int, completion: @escaping (Albums) -> Void)
+    func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> Void)
 }
 
 extension NetworkServicePotocol {

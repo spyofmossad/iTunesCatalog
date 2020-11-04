@@ -28,7 +28,7 @@ class SearchArtistViewController: SearchController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.Segues.ShowAlbums {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let albumsViewController = segue.destination as! AlbumsViewController
+                guard let albumsViewController = segue.destination as? AlbumsViewController else { return }
                 albumsViewController.artistId = artists?.results[indexPath.row].artistId
                 albumsViewController.networkService = networkService
                 albumsViewController.imagesService = ImageService()

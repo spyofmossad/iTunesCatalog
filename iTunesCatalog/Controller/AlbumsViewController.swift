@@ -45,7 +45,7 @@ class AlbumsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.Segues.ShowTracks {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let tracksViewController = segue.destination as! TracksViewController
+                guard let tracksViewController = segue.destination as? TracksViewController else { return }
                 tracksViewController.albumId = albums?[indexPath.row].collectionId
                 tracksViewController.networkService = networkService
             }

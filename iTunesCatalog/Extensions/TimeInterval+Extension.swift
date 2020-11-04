@@ -9,7 +9,7 @@ import Foundation
 
 extension TimeInterval {
        var minutesSeconds: String {
-           return String(format:"%d:%02d", minute, second)
+           return String(format: "%d:%02d", minute, second)
        }
        var minute: Int {
            return Int((self/60).truncatingRemainder(dividingBy: 60))

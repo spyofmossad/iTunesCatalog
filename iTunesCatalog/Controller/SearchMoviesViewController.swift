@@ -32,14 +32,14 @@ class SearchMoviesViewController: SearchController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.Segues.ShowMovie {
             if let indexPath = collectionView.indexPathsForSelectedItems?.first {
-                let movieViewCotroller = segue.destination as! MovieViewController
-                movieViewCotroller.movie = movies?.results[indexPath.row]
-                imagesService.getImage(from: movies?.results[indexPath.row].artworkUrl100) { (data) in
-                    if let data = data {
-                        movieViewCotroller.coverImage = UIImage(data: data)
+                if let movieViewCotroller = segue.destination as? MovieViewController {
+                    movieViewCotroller.movie = movies?.results[indexPath.row]
+                    imagesService.getImage(from: movies?.results[indexPath.row].artworkUrl100) { (data) in
+                        if let data = data {
+                            movieViewCotroller.coverImage = UIImage(data: data)
+                        }
                     }
                 }
-                
             }
         }
     }

@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class AlamofireNetworkService: NetworkServicePotocol {
-    func searchArtists(by text: String, completion: @escaping (Artists) -> ()) {
+    func searchArtists(by text: String, completion: @escaping (Artists) -> Void) {
         let params: [String : Any] = [
             "term": text,
             "entity": "musicArtist",
@@ -28,7 +28,7 @@ class AlamofireNetworkService: NetworkServicePotocol {
             }
     }
 
-    func searchAlbums(by text: String, completion: @escaping (Albums) -> ()) {
+    func searchAlbums(by text: String, completion: @escaping (Albums) -> Void) {
         let params: [String : Any] = [
             "term": text,
             "entity": "album",
@@ -47,7 +47,7 @@ class AlamofireNetworkService: NetworkServicePotocol {
             }
     }
 
-    func searchMovies(by text: String, completion: @escaping (Movies) -> ()) {
+    func searchMovies(by text: String, completion: @escaping (Movies) -> Void) {
         let params: [String : Any] = [
             "term": text,
             "entity": "movie",
@@ -66,10 +66,10 @@ class AlamofireNetworkService: NetworkServicePotocol {
             }
     }
 
-    func getAlbums(byArtist id: Int, completion: @escaping (Albums) -> ()) {
+    func getAlbums(byArtist id: Int, completion: @escaping (Albums) -> Void) {
         let params: [String : Any] = [
-            "id":id.description,
-            "entity":"album"
+            "id": id.description,
+            "entity": "album"
         ]
         AF.request(getUrl(for: .lookup), method: .get, parameters: params)
             .validate()
@@ -83,10 +83,10 @@ class AlamofireNetworkService: NetworkServicePotocol {
             }
     }
 
-    func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> ()) {
+    func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> Void) {
         let params: [String : Any] = [
-            "id":id.description,
-            "entity":"song"
+            "id": id.description,
+            "entity": "song"
         ]
         AF.request(getUrl(for: .lookup), method: .get, parameters: params)
             .validate()

@@ -8,7 +8,7 @@
 import Foundation
 import Moya
 
-enum iTunesCatalogService {
+enum ITunesCatalogService {
     case searchArtists(text: String)
     case searchAlbums(text: String)
     case searchMovies(text: String)
@@ -16,7 +16,7 @@ enum iTunesCatalogService {
     case getTracks(id: Int)
 }
 
-extension iTunesCatalogService: TargetType {
+extension ITunesCatalogService: TargetType {
     var baseURL: URL {
         return URL(string: Constants.Api.BaseUrl)!
     }
@@ -78,7 +78,7 @@ extension iTunesCatalogService: TargetType {
         }
     }
     
-    var headers: [String : String]? {
+    var headers: [String: String]? {
         return nil
     }
 
@@ -86,13 +86,13 @@ extension iTunesCatalogService: TargetType {
 
 class MoyaNetworkManager: NetworkServicePotocol {
     
-    private let provider: MoyaProvider<iTunesCatalogService>
+    private let provider: MoyaProvider<ITunesCatalogService>
     
     init() {
-        provider = MoyaProvider<iTunesCatalogService>()
+        provider = MoyaProvider<ITunesCatalogService>()
     }
     
-    func searchArtists(by text: String, completion: @escaping (Artists) -> ()) {
+    func searchArtists(by text: String, completion: @escaping (Artists) -> Void) {
         provider.request(.searchArtists(text: text)) { (result) in
             switch result {
             
@@ -110,7 +110,7 @@ class MoyaNetworkManager: NetworkServicePotocol {
         }
     }
     
-    func searchAlbums(by text: String, completion: @escaping (Albums) -> ()) {
+    func searchAlbums(by text: String, completion: @escaping (Albums) -> Void) {
         provider.request(.searchAlbums(text: text)) { (result) in
             switch result {
             
@@ -128,7 +128,7 @@ class MoyaNetworkManager: NetworkServicePotocol {
         }
     }
     
-    func searchMovies(by text: String, completion: @escaping (Movies) -> ()) {
+    func searchMovies(by text: String, completion: @escaping (Movies) -> Void) {
         provider.request(.searchMovies(text: text)) { (result) in
             switch result {
             
@@ -146,7 +146,7 @@ class MoyaNetworkManager: NetworkServicePotocol {
         }
     }
     
-    func getAlbums(byArtist id: Int, completion: @escaping (Albums) -> ()) {
+    func getAlbums(byArtist id: Int, completion: @escaping (Albums) -> Void) {
         provider.request(.getAlbums(id: id)) { (result) in
             switch result {
             
@@ -164,7 +164,7 @@ class MoyaNetworkManager: NetworkServicePotocol {
         }
     }
     
-    func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> ()) {
+    func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> Void) {
         provider.request(.getTracks(id: id)) { (result) in
             switch result {
             

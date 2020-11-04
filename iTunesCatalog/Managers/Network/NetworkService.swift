@@ -9,7 +9,7 @@ import Foundation
 
 class NetworkService: NetworkServicePotocol {
 
-    func searchArtists(by text: String, completion: @escaping (Artists) -> ()) {
+    func searchArtists(by text: String, completion: @escaping (Artists) -> Void) {
         var urlComponents = getUrl(for: .search)
         urlComponents.queryItems = [
             URLQueryItem(name: "term", value: text.replacingOccurrences(of: " ", with: "+")),
@@ -21,7 +21,7 @@ class NetworkService: NetworkServicePotocol {
         fetchData(from: urlComponents, completion: completion)
     }
     
-    func searchAlbums(by text: String, completion: @escaping (Albums)->()) {
+    func searchAlbums(by text: String, completion: @escaping (Albums) -> Void) {
         var urlComponents = getUrl(for: .search)
         urlComponents.queryItems = [
             URLQueryItem(name: "term", value: text.replacingOccurrences(of: " ", with: "+")),
@@ -33,7 +33,7 @@ class NetworkService: NetworkServicePotocol {
         fetchData(from: urlComponents, completion: completion)
     }
     
-    func searchMovies(by text: String, completion: @escaping (Movies)->()) {
+    func searchMovies(by text: String, completion: @escaping (Movies) -> Void) {
         var urlComponents = getUrl(for: .search)
         urlComponents.queryItems = [
             URLQueryItem(name: "term", value: text.replacingOccurrences(of: " ", with: "+")),
@@ -45,7 +45,7 @@ class NetworkService: NetworkServicePotocol {
         fetchData(from: urlComponents, completion: completion)
     }
     
-    func getAlbums(byArtist id: Int, completion: @escaping (Albums)->()) {
+    func getAlbums(byArtist id: Int, completion: @escaping (Albums) -> Void) {
         var urlComponents = getUrl(for: .lookup)
         urlComponents.queryItems = [
             URLQueryItem(name: "id", value: id.description),
@@ -55,7 +55,7 @@ class NetworkService: NetworkServicePotocol {
         fetchData(from: urlComponents, completion: completion)
     }
     
-    func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> ()) {
+    func getTracks(byAlbum id: Int, completion: @escaping (Tracks) -> Void) {
         var urlComponents = getUrl(for: .lookup)
         urlComponents.queryItems = [
             URLQueryItem(name: "id", value: id.description),
@@ -80,7 +80,7 @@ class NetworkService: NetworkServicePotocol {
         return urlComponents
     }
     
-    private func fetchData<T : Decodable>(from urlComponents: URLComponents, completion: @escaping (T) -> ()) {
+    private func fetchData<T: Decodable>(from urlComponents: URLComponents, completion: @escaping (T) -> Void) {
         guard let url = urlComponents.url else { return }
         
         URLSession.shared.dataTask(with: url, completionHandler: { (data, _, error) in

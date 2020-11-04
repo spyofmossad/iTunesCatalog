@@ -20,8 +20,8 @@ struct Track: Codable {
 }
 
 enum Wrapper: String, Codable {
-    case collection = "collection"
-    case track = "track"
+    case collection
+    case track
 }
 
 extension Track {
