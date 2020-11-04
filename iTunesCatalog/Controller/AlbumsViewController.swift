@@ -69,13 +69,8 @@ extension AlbumsViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.TableCells.Album, for: indexPath) as? AlbumTableViewCell
         
         if let cell = cell, let album = albums?[indexPath.row] {
-            imagesService?.getImage(from: album.artworkUrl60) { (data) in
-                DispatchQueue.main.async {
-                    if let data = data {
-                        cell.prepare(with: album, cover: UIImage(data: data) ?? UIImage(named: "no-image")!)
-                    }
-                }
-            }
+            cell.prepare(with: album)
+            cell.albumCover.sd_setImage(with: URL(string: album.artworkUrl60 ?? "no_image"), placeholderImage: UIImage(named: "no-image"))
             return cell
         }
 

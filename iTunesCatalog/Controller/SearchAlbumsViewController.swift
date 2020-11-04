@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class SearchAlbumsViewController: SearchController {
     
@@ -73,13 +74,8 @@ extension SearchAlbumsViewController: UITableViewDataSource {
         let album = albums?[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.TableCells.SearchAlbum) as? AlbumTableViewCell
         if let album = album, let cell = cell {
-            imagesService.getImage(from: album.artworkUrl60) { (data) in
-                DispatchQueue.main.async {
-                    if let data = data {
-                        cell.prepare(with: album, cover: UIImage(data: data) ?? UIImage(named: "no-image")!)
-                    }
-                }
-            }
+            cell.prepare(with: album)
+            cell.albumCover.sd_setImage(with: URL(string: album.artworkUrl60 ?? "no_image"), placeholderImage: UIImage(named: "no-image"))
             return cell
         }
         return UITableViewCell()

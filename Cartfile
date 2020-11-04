@@ -1,1 +1,2 @@
 github "Moya/Moya" ~> 14.0
+github "SDWebImage/SDWebImage"

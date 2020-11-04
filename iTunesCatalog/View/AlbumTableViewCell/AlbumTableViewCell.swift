@@ -12,9 +12,8 @@ class AlbumTableViewCell: UITableViewCell {
     @IBOutlet weak var albumName: UILabel!
     @IBOutlet weak var albumPrice: UILabel!
     
-    func prepare(with album: Album, cover image: UIImage) {
+    func prepare(with album: Album) {
         albumName.text = album.collectionName
         albumPrice.text = album.fullPrice
-        albumCover.image = image
     }
 }
