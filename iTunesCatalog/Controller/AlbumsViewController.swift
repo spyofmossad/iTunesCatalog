@@ -24,6 +24,11 @@ class AlbumsViewController: UIViewController {
         getAlbumsData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.extendedLayoutIncludesOpaqueBars = true
+    }
+    
     private func getAlbumsData() {
         if let artistId = artistId {
             networkService?.getAlbums(byArtist: artistId) { [weak self] (albums) in

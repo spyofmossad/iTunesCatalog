@@ -22,6 +22,11 @@ class TracksViewController: UIViewController {
         getTracksData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.extendedLayoutIncludesOpaqueBars = true
+    }
+    
     private func getTracksData() {
         if let albumId = albumId {
             networkService?.getTracks(byAlbum: albumId, completion: { [weak self] (tracks) in
