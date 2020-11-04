@@ -14,8 +14,8 @@ class SearchMoviesViewController: SearchController {
     private let itemsCount: CGFloat = 2
     private let padding: CGFloat = 10
     private var movies: Movies?
-    private var networkService: NetworkServicePotocol
-    private var imagesService: ImageService
+    private let networkService: NetworkServicePotocol
+    private let imagesService: ImageService
     
     required init?(coder: NSCoder) {
         self.networkService = NetworkService()

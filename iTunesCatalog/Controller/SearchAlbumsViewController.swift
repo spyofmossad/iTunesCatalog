@@ -12,8 +12,8 @@ class SearchAlbumsViewController: SearchController {
     @IBOutlet weak var tableView: UITableView!
     
     private var albums: [Album]?
-    private var networkService: NetworkServicePotocol
-    private var imagesService: ImageService
+    private let networkService: NetworkServicePotocol
+    private let imagesService: ImageService
     
     required init?(coder: NSCoder) {
         self.networkService = NetworkService()

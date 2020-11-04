@@ -11,7 +11,7 @@ class SearchArtistViewController: SearchController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private var networkService: NetworkServicePotocol
+    private let networkService: NetworkServicePotocol
     private var artists: Artists?
     
     required init?(coder: NSCoder) {
