@@ -31,15 +31,7 @@ class SearchAlbumsViewController: SearchController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let navHeight = self.navigationController?.navigationBar.frame.origin.y
-        
-        if navHeight! > 0 {
-            NSLayoutConstraint.activate([
-                tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: navHeight! * 2.2)
-            ])
-        }
-        
+        self.extendedLayoutIncludesOpaqueBars = true
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
