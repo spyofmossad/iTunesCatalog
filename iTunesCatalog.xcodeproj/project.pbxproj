@@ -25,6 +25,9 @@
 		0A7E748E252DE1EC00EE0994 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E748D252DE1EC00EE0994 /* SearchController.swift */; };
 		0A8C9F172528799500719C10 /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C9F162528799500719C10 /* TracksViewController.swift */; };
 		0A8C9F1A25287C5A00719C10 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C9F1925287C5A00719C10 /* Tracks.swift */; };
+		0A995AF52552D58700E5951B /* SearchMovies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A995AF42552D58700E5951B /* SearchMovies.storyboard */; };
+		0A9E56542552D8B200BFDFF4 /* SearchArtists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9E56532552D8B200BFDFF4 /* SearchArtists.storyboard */; };
+		0A9E56562552DA4B00BFDFF4 /* SearchAlbums.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9E56552552DA4B00BFDFF4 /* SearchAlbums.storyboard */; };
 		0AC0EE082529CE29007ECD98 /* SearchAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0EE072529CE29007ECD98 /* SearchAlbumsViewController.swift */; };
 		0ADBDC712539BF6300591AC3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADBDC702539BF6300591AC3 /* Alamofire.framework */; };
 		0ADBDC732539BF6D00591AC3 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADBDC722539BF6D00591AC3 /* Moya.framework */; };
@@ -59,6 +62,9 @@
 		0A7E748D252DE1EC00EE0994 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		0A8C9F162528799500719C10 /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
 		0A8C9F1925287C5A00719C10 /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		0A995AF42552D58700E5951B /* SearchMovies.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchMovies.storyboard; sourceTree = "<group>"; };
+		0A9E56532552D8B200BFDFF4 /* SearchArtists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchArtists.storyboard; sourceTree = "<group>"; };
+		0A9E56552552DA4B00BFDFF4 /* SearchAlbums.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchAlbums.storyboard; sourceTree = "<group>"; };
 		0AC0EE072529CE29007ECD98 /* SearchAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbumsViewController.swift; sourceTree = "<group>"; };
 		0ADBDC702539BF6300591AC3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		0ADBDC722539BF6D00591AC3 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = SOURCE_ROOT; };
@@ -123,6 +129,9 @@
 			children = (
 				0AE286D42526429A007F53EE /* Main.storyboard */,
 				0AE286D92526429B007F53EE /* LaunchScreen.storyboard */,
+				0A995AF42552D58700E5951B /* SearchMovies.storyboard */,
+				0A9E56532552D8B200BFDFF4 /* SearchArtists.storyboard */,
+				0A9E56552552DA4B00BFDFF4 /* SearchAlbums.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -268,9 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE286DB2526429B007F53EE /* LaunchScreen.storyboard in Resources */,
+				0A9E56562552DA4B00BFDFF4 /* SearchAlbums.storyboard in Resources */,
 				0AE286D82526429B007F53EE /* Assets.xcassets in Resources */,
 				0AE286D62526429A007F53EE /* Main.storyboard in Resources */,
+				0A9E56542552D8B200BFDFF4 /* SearchArtists.storyboard in Resources */,
 				0A0EA878252B5F7700230BEA /* AlbumTableViewCell.xib in Resources */,
+				0A995AF52552D58700E5951B /* SearchMovies.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
