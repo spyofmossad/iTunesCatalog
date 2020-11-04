@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ARI-Cj-11h">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,36 +12,38 @@
             <objects>
                 <viewController id="kyw-gs-3AZ" customClass="TracksViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ohI-4T-oma">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vew-aa-GEH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="trackCell" id="RwA-b2-tzG" customClass="TrackTableViewCell" customModule="iTunesCatalog" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="40.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RwA-b2-tzG" id="OSK-tC-CEy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zji-ZH-84t">
-                                                    <rect key="frame" x="20" y="11.5" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zji-ZH-84t">
+                                                    <rect key="frame" x="19.999999999999996" y="10.333333333333334" width="41.666666666666657" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vU5-VJ-rQM">
-                                                    <rect key="frame" x="352" y="11.5" width="42" height="21"/>
+                                                    <rect key="frame" x="352" y="10" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="vU5-VJ-rQM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zji-ZH-84t" secondAttribute="trailing" constant="1" id="AOU-kZ-Gek"/>
+                                                <constraint firstItem="vU5-VJ-rQM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zji-ZH-84t" secondAttribute="trailing" constant="5" id="AOU-kZ-Gek"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zji-ZH-84t" secondAttribute="bottom" constant="10" id="AtD-Cf-noP"/>
                                                 <constraint firstItem="Zji-ZH-84t" firstAttribute="leading" secondItem="OSK-tC-CEy" secondAttribute="leadingMargin" id="C9J-kk-iL8"/>
+                                                <constraint firstItem="Zji-ZH-84t" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OSK-tC-CEy" secondAttribute="top" constant="10" id="Z1f-Ym-drG"/>
                                                 <constraint firstItem="vU5-VJ-rQM" firstAttribute="centerY" secondItem="OSK-tC-CEy" secondAttribute="centerY" id="d3t-YG-OWC"/>
                                                 <constraint firstItem="Zji-ZH-84t" firstAttribute="centerY" secondItem="OSK-tC-CEy" secondAttribute="centerY" id="gnE-z0-Dc2"/>
                                                 <constraint firstItem="vU5-VJ-rQM" firstAttribute="trailing" secondItem="OSK-tC-CEy" secondAttribute="trailingMargin" id="y8h-iH-JmT"/>
@@ -84,7 +86,7 @@
                     <tabBarItem key="tabBarItem" title="Artists" image="star.fill" catalog="system" id="fQd-cu-ghp"/>
                     <navigationItem key="navigationItem" id="Jot-iY-qhc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="lSJ-DH-xub">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -100,29 +102,29 @@
             <objects>
                 <viewController id="m3s-Nq-g2U" customClass="SearchArtistViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FE6-9F-rOU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e5c-7p-Etm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="artistCell" textLabel="AIt-RK-fIZ" detailTextLabel="8p5-Fa-ZcV" style="IBUITableViewCellStyleSubtitle" id="1oG-0k-Ctc" customClass="ArtistTableViewCell" customModule="iTunesCatalog" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1oG-0k-Ctc" id="Obq-Hx-0s3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AIt-RK-fIZ">
-                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20.000000000000004" y="8.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8p5-Fa-ZcV">
-                                                    <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -146,13 +148,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="e5c-7p-Etm" firstAttribute="leading" secondItem="odI-nE-kAN" secondAttribute="leading" id="0FJ-bQ-rKg"/>
+                            <constraint firstItem="e5c-7p-Etm" firstAttribute="top" secondItem="odI-nE-kAN" secondAttribute="top" id="1GZ-29-c5H"/>
                             <constraint firstItem="odI-nE-kAN" firstAttribute="trailing" secondItem="e5c-7p-Etm" secondAttribute="trailing" id="H9L-9e-sWK"/>
-                            <constraint firstItem="e5c-7p-Etm" firstAttribute="top" secondItem="odI-nE-kAN" secondAttribute="top" id="ZkH-xz-fYJ"/>
                             <constraint firstItem="odI-nE-kAN" firstAttribute="bottom" secondItem="e5c-7p-Etm" secondAttribute="bottom" id="eQi-R0-32o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="odI-nE-kAN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Artist" id="bmY-YZ-OxA"/>
+                    <navigationItem key="navigationItem" title="Artist" largeTitleDisplayMode="always" id="bmY-YZ-OxA"/>
                     <connections>
                         <outlet property="tableView" destination="e5c-7p-Etm" id="ZWp-BG-i81"/>
                     </connections>
@@ -166,18 +168,18 @@
             <objects>
                 <viewController id="H5J-kf-Cbb" customClass="AlbumsViewController" customModule="iTunesCatalog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6OV-QW-p3m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MPH-cG-JOU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCell" id="KjP-cB-7s4" customClass="AlbumTableViewCell" customModule="iTunesCatalog" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KjP-cB-7s4" id="LoT-ee-3g5">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
